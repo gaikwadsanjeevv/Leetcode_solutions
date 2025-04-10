@@ -27,7 +27,7 @@ Space Complexity: O(n)
 ```
 
 ### Solution for the problem.  
-
+```Java
 import java.util.HashMap;
 import java.util.Map;
 
@@ -58,3 +58,4 @@ public class Solution {
         throw new IllegalArgumentException("No two sum solution found.");
     }
 }
+```
