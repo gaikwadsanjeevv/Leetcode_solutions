@@ -7,6 +7,10 @@ Given an integer array nums, return true if any value appears at least twice, an
 Input:  nums = [1, 2, 3, 1]
 Output: true
 Explanation: 1 appears more than once
+
+Input:  nums = [1, 2, 3, 4]
+Output: false
+Explanation: All elements are unique
 ```
 ## Approach:  
 ### Brute Force Approach:  
@@ -59,7 +63,8 @@ If the loop finishes without matches → return false.
 #### ⚠️ Drawback:  
 Time Complexity: O(n^2) → Slow for large arrays.  
 Works fine for small input sizes or for learning purposes.  
-🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹  
+🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹 🔹  
+
 ### Optimal Approach: Using a Set  
 🧠 Idea:  
 Loop through the array once.  
