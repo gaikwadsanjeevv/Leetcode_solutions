@@ -28,34 +28,40 @@ Space Complexity: O(n)
 
 ### Solution for the problem. (Read Code Comments to understand the flow and logic)  
 ```Java
+// Importing the HashMap and Map classes from java.util package
 import java.util.HashMap;
 import java.util.Map;
 
 public class Solution {
-
+    
+    // Main method to find two indices whose elements sum up to the target
     public int[] twoSum(int[] nums, int target) {
 
-        // HashMap to store the number and its index
+        // Create an empty HashMap to store number as key and its index as value
         Map<Integer, Integer> hashmap = new HashMap<>();
 
-        // Iterate through the array
-        for (int i = 0; i < nums.length; i++) {
-
-            // Calculate the complement number
+        // Loop through each element in the input array
+        for(int i = 0; i < nums.length; i++) {
+            
+            // Calculate the number needed to reach the target from current element
             int complement = target - nums[i];
 
-            // Check if the complement is already in the map
-            if (hashmap.containsKey(complement)) {
-                // If found, return the index of the complement and the current index
+            // Check if this complement is already in the map
+            if(hashmap.containsKey(complement)) {
+                // If found, return the index of complement from map and current index
+                // This means nums[hashmap.get(complement)] + nums[i] = target
                 return new int[] {hashmap.get(complement), i};
             }
 
-            // Otherwise, store the current number with its index
+            // If not found, store the current number and its index in the map
+            // So we can check it against future elements
             hashmap.put(nums[i], i);
         }
 
-        // If no solution is found, throw an error (though problem guarantees one)
-        throw new IllegalArgumentException("No two sum solution found.");
+        // If no such pair is found in the entire array, throw an exception
+        // (This line will never run if input always guarantees a solution)
+        throw new IllegalArgumentException("No two sum solution");
     }
 }
+
 ```
