@@ -96,6 +96,6 @@ public class Solution {
 }
 ```
 
-Approach🔹 🔹 🔹 🔹Time Complexity🔹 🔹 🔹 🔹Space Complexity🔹 🔹 🔹 🔹	Notes  
-Brute Force 🔹 🔹O(n log n)🔹 🔹O(n)🔹 🔹Uses sorting  
-Optimal (Map)	🔹 🔹O(n)🔹 🔹	O(1)🔹 🔹	Uses character frequency array  
+Approach🔹 🔹 🔹 🔹Time Complexity🔹 🔹 🔹 🔹Space Complexity🔹 🔹 🔹 🔹🔹 🔹Notes  
+Brute Force 🔹 🔹🔹 O(n log n)🔹 🔹🔹 🔹🔹 🔹O(n)🔹 🔹🔹 🔹🔹 🔹🔹 🔹🔹 🔹Uses sorting  
+Optimal (Map)	🔹 🔹O(n)🔹 🔹🔹 🔹🔹 🔹🔹 🔹O(1)🔹 🔹🔹 🔹🔹 🔹🔹 🔹🔹 🔹Uses character frequency array  
